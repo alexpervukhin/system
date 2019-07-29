@@ -6,49 +6,22 @@ for example resource saving strategy (less lifts in transit, more stops per lift
 
 ## Getting Started
 
+please set up Java and Maven to compile and run tests
 need: Java 8+, Maven 3+;
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+"mvn clean package" command will execute unit tests
 
-### Break down into end to end tests
+### Unit tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+1. Four use test cases to test individual lift actions under different 
+   conditions: going up from the 1st floor, going down from the last floor, 
+               going to the last floor to pick up passengers going down, 
+               after task completed - go to designated floor to meet 
+               rush hour recommendations. 
+2. Overall system test - 3 lifts servicing calls - up and down under rush hour (PM)
+   condition. 
 
 ## Built With
 
