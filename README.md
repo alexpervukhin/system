@@ -9,6 +9,9 @@ for example resource saving strategy (less lifts in transit, more stops per lift
 please set up Java and Maven to compile and run tests
 need: Java 8+, Maven 3+;
 
+*** found out that the build works without glitches on OpenJDK11/12 ***
+*** issues with Oracle JDK8 probably due to VAVR library ***
+
 ## Running the tests
 
 "mvn clean package" command will execute unit tests
